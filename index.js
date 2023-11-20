@@ -173,3 +173,29 @@ console.log(nam.substring(2,5)
 //     default:
 //         console.log(a%b)
 // }
+
+
+
+//while
+// i=9;
+// while (i>11) {
+//     console.log("jii")
+// }
+
+// //for
+// var s="aanbs";
+// //0 1 2 3 4
+
+// for (let i = 0; i < 5; i++) {
+//     for (let j = 0; j < 5; j++) {
+//         console.log("*");
+//     }
+// }
+// /*
+//     i=0
+//     0-  *****
+//     1-  *****
+//     2-  *****
+
+   
+// */
