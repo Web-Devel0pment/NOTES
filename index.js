@@ -199,3 +199,64 @@ console.log(nam.substring(2,5)
 
    
 // */
+
+console.log("-----------------------------------------------Arrays Function--------------------------------------------- ");
+const arr=["a","b","c","d"]
+console.log(arr[2]); // accesssing the array 
+arr[1]="bannana" // changging the specific value in the array 
+console.log("the array length "+arr.length); // array length 
+arr.push("grape"); //push in the array
+arr[arr.length]="lemon" //add values without push method 
+console.log(Object.values(arr));
+const arr2=[];
+console.log(arr2);
+console.log(typeof arr2); // objects 
+arr.push("a"); // push method 
+arr.pop("a"); //pop method 
+console.log(arr);
+console.log(arr.lastIndexOf("a")); //last indexof 
+console.log("--------------loop using foor loop--------------");
+
+for(let i=0;i<arr.length;i++){
+        console.log(arr[i]);
+}
+book=["programming with c","c++","java","dev ops","react"]
+console.log("------------loop using mapfunction -----------------");
+
+book.map((value)=>{
+        console.log(value);
+})
+
+console.log(book.reverse());
+console.log(book.sort());
+
+// sort in decending order
+console.log(book.reverse());
+
+let arr4=arr.concat(book);
+console.log(arr4.sort());
+console.log(arr);
+// arr.push("good",2) // we cannot insert the value at the specific position 
+
+arr4=[...arr.slice(0,2), // thered operator 
+        "good",
+        ...arr.slice(2)]
+        //[a,banana,good,......]
+
+console.log(arr4);
+
+// splice 
+const months = ['Jan', 'March', 'April', 'June'];
+// months.splice(1, 0, 'Feb');
+months.splice(1, 2, 'Feb');
+// Inserts at index 1
+console.log(months);
+
+arr4= new Array(1,2,3,4,5,6,7,8,9,0) // array constructor 
+console.log( typeof arr4);
+// task 
+//  demonstate the callback() of sort
+// some array functions like indexof ,indexof some(),
+//  rotate the array 
+// example 1234567890 rotatevalue=7   result  4567890123
+
