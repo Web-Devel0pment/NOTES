@@ -200,6 +200,7 @@ console.log(nam.substring(2,5)
    
 // */
 
+
 console.log("-----------------------------------------------Arrays Function--------------------------------------------- ");
 const arr=["a","b","c","d"]
 console.log(arr[2]); // accesssing the array 
@@ -226,7 +227,13 @@ console.log("------------loop using mapfunction -----------------");
 book.map((value)=>{
         console.log(value);
 })
+console.log("------------loop using foreach -----------------");
 
+book.forEach((value)=>{
+        console.log(value);
+})
+
+console.log("------------sort in descending order -----------------");
 console.log(book.reverse());
 console.log(book.sort());
 
@@ -256,6 +263,42 @@ arr4= new Array(1,2,3,4,5,6,7,8,9,0) // array constructor
 console.log( typeof arr4);
 // task 
 //  demonstate the callback() of sort
+// some array functions like indexof ,indexof some(),
+//  rotate the array 
+// example 1234567890 rotatevalue=7   result  4567890123
+
+//2darrays 
+const tarr=[
+        ["divakaran",20],
+        ["kumaran",40],
+        ["guru",86]
+]
+tarr[0][0]="ravi";
+console.log(tarr[0][0]);
+
+
+console.log("---------------rest paramenters-----------------");
+function printit(name,...restparamenters){
+        console.log(name);
+        if(restparamenters){
+                restparamenters.map((data)=>{
+                        console.log(data);
+                })
+        }
+}
+printit("suresh","kamalhasan","vijay","surya");
+
+console.log("--------------- callback function -----------------");
+function fun(gun){
+        console.log("printinggun");
+        gun();
+        console.log("endgun");
+ }
+fun(()=>{
+        console.log("printhello");
+})
+// task 
+// demonstate the callback() of sort
 // some array functions like indexof ,indexof some(),
 //  rotate the array 
 // example 1234567890 rotatevalue=7   result  4567890123
